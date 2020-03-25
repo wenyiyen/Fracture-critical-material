@@ -6,9 +6,9 @@
 
 <h4 align="center">
     <a href="#material overview">Material Overview</a> |
+     <a href="#material compiling">Material Compiling</a> |
     <a href="#connection model">Connection model</a> |
-    <a href="#steel frame performance">Steel Frame Performance</a> |
-    <a href="#material compiling">Material Compiling</a>
+    <a href="#steel frame performance">Steel Frame Performance</a>
 </h4>
 
 <!-- markdownlint-enable -->
