@@ -1,0 +1,1 @@
+Used parameters: sig_cr = 76.9929; m =  0.2006
