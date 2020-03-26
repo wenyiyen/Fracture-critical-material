@@ -26,7 +26,7 @@ In the proposed method, the connection is modeled using fiber beam elements, in 
 The source code of the material is added in `./OpenSeesMP_Sherlock/SRC/material/uniaxial/`: [SteelFractureDI.h](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/material/uniaxial/SteelFractureDI.h) and [SteelFractureDI.cpp](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/material/uniaxial/SteelFractureDI.cpp).
 
 ### Compiling OpenSeesMP on Sherlock (user local)
-On [Sherlock](https://www.sherlock.stanford.edu/) terminal, change current directory to local `./OpenSeesMP_Sherlock/`. Install tcl locally before the following steps.
+On [Sherlock](https://www.sherlock.stanford.edu/) terminal, change current directory to local `./`*`user`*`/OpenSeesMP_Sherlock/`. Install [tcl](https://www.tcl.tk/software/tcltk/) locally before the following steps.
 - **Delete previous make items**
 ```
 make clean
@@ -45,3 +45,7 @@ module load python # (when building python)
 ```
 make
 ```
+### Adding New Material into OpenSeesMP on Sherlock - *Optional*
+If interested in adding newly developed material into OpenSees, please refer to instructions below.
+
+- **Create internal links for OpenSees to recognize the new material**
