@@ -70,3 +70,5 @@ If interested in adding newly developed material into OpenSees, please refer to 
     - Follow section ["Compiling OpenSeesMP on Sherlock (user local)"](#compiling-openseesmp-on-sherlock-user-local)
 
 ## Connection Model
+To resemble the lab test beam-column connection assembly, we model the essential components as the following:
+- Beam: A force-based element with hinge sections discretized into multiple fibers. The two flange fibers (top and bottom flange fibers) are modeled using the fracture critical material described in the [first section](#material-overview).
