@@ -68,3 +68,5 @@ If interested in adding newly developed material into OpenSees, please refer to 
     - Add line <code>*newMaterial*.o</code> in [OpenSeesMP_Sherlock/SRC/Makefile](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/Makefile)
 - **Compile**
     - Follow section ["Compiling OpenSeesMP on Sherlock (user local)"](#compiling-openseesmp-on-sherlock-user-local)
+
+## Connection Model
