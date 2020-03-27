@@ -26,7 +26,16 @@ In the proposed method, the connection is modeled using fiber beam elements, in 
 The source code of the material is added in `./OpenSeesMP_Sherlock/SRC/material/uniaxial/`: [SteelFractureDI.h](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/material/uniaxial/SteelFractureDI.h) and [SteelFractureDI.cpp](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/material/uniaxial/SteelFractureDI.cpp).
 
 ### Compiling OpenSeesMP on Sherlock (user local)
-On [Sherlock](https://www.sherlock.stanford.edu/) terminal, change current directory to local `./`*`user`*`/OpenSeesMP_Sherlock/`. Install [tcl](https://www.tcl.tk/software/tcltk/) locally before the following steps.
+- **Set up**\
+Copy the full directory [OpenSeesMP_Sherlock](https://github.com/wenyiyen/Fracture-critical-material/tree/master/OpenSeesMP_Sherlock) to <code>/home/users/**_user_**/</code> on [Sherlock](https://www.sherlock.stanford.edu/).\
+Install [tcl](https://www.tcl.tk/software/tcltk/) to <code>/home/users/**_user_**/tcl/</code>.\
+    Proceed with Sherlock terminal:
+<pre>
+mkdir /home/users/<b><i>user</b></i>/lib
+mkdir /home/users/<b><i>user</b></i>/bin
+cd /home/users/<b><i>user</b></i>/OpenSeesMP_Sherlock
+</pre>
+
 - **Delete previous make items**
 ```
 make clean
@@ -47,5 +56,14 @@ make
 ```
 ### Adding New Material into OpenSeesMP on Sherlock - *Optional*
 If interested in adding newly developed material into OpenSees, please refer to instructions below.
-
+- **Include material source code**
+    - Add files *newMaterial*.h and *newMaterial*.cpp into [/OpenSeesMP_Sherlock/SRC/material/uniaxial/](https://github.com/wenyiyen/Fracture-critical-material/tree/master/OpenSeesMP_Sherlock/SRC/material/uniaxial).
 - **Create internal links for OpenSees to recognize the new material**
+    - Add lines in [OpenSeesUniaxialMaterialCommands.cpp](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/interpreter/OpenSeesUniaxialMaterialCommands.cpp)
+    - Add lines in [TclModelBuilderUniaxialMaterialCommand.cpp](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/material/uniaxial/TclModelBuilderUniaxialMaterialCommand.cpp)
+    - Add lines in [classTags.h](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/classTags.h)
+- **Editing makefiles for OpenSeesMP**
+    - Add line <code>*newMaterial*.o</code> in [OpenSeesMP_Sherlock/SRC/material/uniaxial/Makefile](er/OpenSeesMP_Sherlock/SRC/material/uniaxial/Makefile)
+    - Add line <code>*newMaterial*.o</code> in [OpenSeesMP_Sherlock/SRC/Makefile](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/Makefile)
+- **Compile**
+    - Follow section ["Compiling OpenSeesMP on Sherlock (user local)"](#Compiling-OpenSeesMP-on-Sherlock-(user-local))
