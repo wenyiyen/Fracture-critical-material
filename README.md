@@ -79,4 +79,5 @@ To resemble the lab test beam-column connection assembly, we model the essential
 - Beam: A force-based element with hinge sections discretized into multiple fibers. The two flange fibers (top and bottom flange fibers) are modeled using the fracture critical material described in the [first section](#material-overview).
 - Column: Elastic elements.
 - Panel zone: Krawinkler's model.
+- Below figure shows the lab test data vs the simulation result:
 <p align="center"><img style="max-width:500px" width="640" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/SAC.gif" alt="SAC"></p>
