@@ -54,6 +54,7 @@ module load python # (when building python)
 ```
 make
 ```
+The OpenSeesMP binary will be built in <code>/home/users/<b><i>user</b></i>/bin</code>.
 ### Adding New Material into OpenSeesMP on Sherlock - *Optional*
 If interested in adding newly developed material into OpenSees, please refer to instructions below.
 - **Include material source code**
