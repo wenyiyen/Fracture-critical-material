@@ -22,6 +22,11 @@ In the proposed method, the connection is modeled using fiber beam elements, in 
 - Material Constitutive
 <p align="center"><img style="max-width:500px" width="640" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/constitutive.png" alt="constitutive"></p>
 
+- The material described in this study also includes a stress-based damage index function, which combines linear S-N curve, modified cycle counting method, and the Miner's rule.
+    
+    - <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma_{cr}=90,\;m=0.275" title="\Large \sigma_{cr}=90,\;m=0.275" />
+
+
 ## Material Compiling
 The source code of the material is added in `./OpenSeesMP_Sherlock/SRC/material/uniaxial/`: [SteelFractureDI.h](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/material/uniaxial/SteelFractureDI.h) and [SteelFractureDI.cpp](https://github.com/wenyiyen/Fracture-critical-material/blob/master/OpenSeesMP_Sherlock/SRC/material/uniaxial/SteelFractureDI.cpp).
 
@@ -72,3 +77,6 @@ If interested in adding newly developed material into OpenSees, please refer to 
 ## Connection Model
 To resemble the lab test beam-column connection assembly, we model the essential components as the following:
 - Beam: A force-based element with hinge sections discretized into multiple fibers. The two flange fibers (top and bottom flange fibers) are modeled using the fracture critical material described in the [first section](#material-overview).
+- Column: Elastic elements.
+- Panel zone: Krawinkler's model.
+<p align="center"><img style="max-width:500px" width="640" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/constitutive.png" alt="constitutive"></p>
