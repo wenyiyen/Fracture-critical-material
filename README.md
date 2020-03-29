@@ -84,3 +84,13 @@ To resemble the lab test beam-column connection assembly, we model the essential
 <p align="center"><img style="max-width:500px" width="640" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/SAC.gif" alt="SAC"></p>
 
 ## Steel Frame Performance
+The study includes the performance analysis of a 31 story steel moment frame building.
+- For multi-stripe analysis, please refer to [MRF31_Multi-stripe](https://github.com/wenyiyen/Fracture-critical-material/tree/master/MRF31_Multi-stripe).
+- For incremental dynamic analysis, please refer to [MRF31_IDA](https://github.com/wenyiyen/Fracture-critical-material/tree/master/MRF31_IDA).
+
+Plots below shows the basic plans and geometry for the building, followed by the incremental dynamic analysis results and the collapse fragility curve.
+
+<p align="center"><img style="max-width:500px" width="600" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/plan.png" alt="plan"></p>
+<p align="center"><img style="max-width:500px" width="800" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/IDA.png" alt="IDA"></p>
+
+
