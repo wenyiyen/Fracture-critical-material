@@ -25,7 +25,7 @@ In the proposed method, the connection is modeled using fiber beam elements, in 
 - The material described in this study also includes a stress-based damage index function, which combines linear S-N curve, modified cycle counting method, and the Miner's rule.
     
     - <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma_{cr}=90,\;m=0.275" title="\Large \sigma_{cr}=90,\;m=0.275" />
-    <p align="center"><img style="max-width:500px" width="640" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/DI.gif" alt="DI"></p>
+    <p align="center"><img style="max-width:500px" width="640" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/DI.mp4" alt="DI"></p>
 
 
 ## Material Compiling
@@ -82,3 +82,5 @@ To resemble the lab test beam-column connection assembly, we model the essential
 - Panel zone: Krawinkler's model.
 - Below figure shows the lab test data vs the simulation result:
 <p align="center"><img style="max-width:500px" width="640" src="https://github.com/wenyiyen/Fracture-critical-material/blob/master/fig/SAC.gif" alt="SAC"></p>
+
+## Steel Frame Performance
